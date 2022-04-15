@@ -1,0 +1,31 @@
+<?php
+$dbhost='localhost';
+$dbname='assignment';
+$dbusername='root';
+$dbpass='';
+
+$mysqli=mysqli_connect($dbhost,$dbusername,$dbpass)
+
+if(isset($_POST['submit']))
+{
+    $id=$_GET['id'];
+    $class_price=$_GET['class_price'];
+    $class_name=$_GET['class_name'];
+    $class_short_description=$_GET['class_short_description'];
+    $class_date=$_GET['class_date'];
+    $id=$_GET['id'];
+    $id=$_GET['id'];
+    $id=$_GET['id'];
+    $id=$_GET['id'];
+    $id=$_GET['id'];
+    $id=$_GET['id'];
+    $id=$_GET['id'];
+    $id=$_GET['id'];
+    $id=$_GET['id'];
+    $id=$_GET['id'];
+    $id=$_GET['id'];
+    $id=$_GET['id'];
+    $id=$_GET['id'];
+    $id=$_GET['id'];
+}
+?>

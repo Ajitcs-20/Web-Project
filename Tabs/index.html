@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Tabs</title>
+</head>
+<body>
+  <div class="mytabs">
+    <input type="radio" id="tabfree" name="mytabs" checked="checked">
+    <label for="tabfree">Details</label>
+    <div class="tab">
+      <h2>Details</h2>
+       <b> Duration: </b> 1 <br><br><br>
+       <b>  Price:</b> $500 <br><br><br>
+        <b>   Discount Perecentage: </b> 0<br><br><br>
+        <b>  Offer Name: </b><br><br><br>
+      <b> Status:</b> 0<br><br><br>
+        <button>Edit</button>
+        <button>Delete</button>
+    </div>
+
+    <input type="radio" id="tabsilver" name="mytabs">
+    <label for="tabsilver">Plans</label>
+    <div class="tab">
+      <h2>Plans</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+
+    <input type="radio" id="tabgold" name="mytabs">
+    <label for="tabgold">Classes</label>
+    <div class="tab">
+      <form action="index.php" method="GET">
+      <h2>Classes</h2>
+     <table>
+       <tr>
+         
+           <th>id</th>
+           <td>
+           <input type="text" name="id">
+         </td>
+       </tr>
+       <tr>
+        
+        <th>class_price</th>
+        <td>
+        <input type="number" name="class_price">
+         </td>
+       </tr>
+       <tr>
+         
+           <th>class_name</th>
+           <td>
+           <input type="text" name="class_name" >
+         </td>
+       </tr>
+       <tr>
+        
+          <th>class_short_description</th>
+          <td>
+          <input type="text" name="class_short_description">
+        </td>
+      </tr>
+      <tr>
+        
+          <th>class_date</th>
+          <td>
+          <input type="text" name="class_date" >
+        </td>
+      </tr>
+      <tr>
+        
+          <th>class_duration</th>
+          <td>
+          <input type="number" name="class_duration" >
+        </td>
+      </tr>
+      <tr>
+      
+          <th>class_member_limit</th>
+          <td>
+          <input type="number" name="class_member_limit">
+        </td>
+      </tr>
+      <tr>
+        
+          <th>class_level</th>
+          <td>
+          <input type="text" name="class_level" >
+        </td>
+      </tr>
+      <tr>
+      
+          <th>class_description</th>
+          <td>
+          <input type="text" name="class_description">
+        </td>
+      </tr>
+      <tr>
+        
+          <th>class_benefits</th>
+          <td>
+          <input type="text" name="class_benefits">
+        </td>
+      </tr>
+      <tr>
+        
+          <th>class_cover</th>
+          <td>
+          <input type="text" name="class_cover" >
+        </td>
+      </tr>
+      <tr>
+        
+          <th>class_trainer</th>
+          <td>
+          <input type="text" name="class_trainer" >
+        </td>
+      </tr>
+      <tr>
+        
+          <th>class_status</th>
+          <td>
+          <input type="text" name="class_status" >
+        </td>
+      </tr>
+      <tr>
+        
+          <th>delete_at</th>
+          <td>
+          <input type="text" name="delete_at" >
+        </td>
+      </tr>
+      <tr>
+        
+          <th>update_at</th>
+          <td>
+          <input type="text" name="update_at" >
+        </td>
+      </tr>
+      <tr>
+      
+          <th>created_at</th>
+          <td>
+          <input type="text" name="created_at" >
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="submit" name="submit">
+        </td>
+      </tr>
+      
+     </table>
+    </div>
+    
+</form>
+  </div>
+  <?php
+  if(isset($_GET['submit']))
+  {
+      $id=$_GET['id'];
+      $class_price=$_GET['class_price'];
+      $class_name=$_GET['class_name'];
+      $class_short_description=$_GET['class_short_description'];
+      $class_date=$_GET['class_date'];
+      $class_duration=$_GET['class_duration'];
+      $class_member_limit=$_GET['class_member_limit'];
+      $class_level=$_GET['class_level'];
+      $class_description=$_GET['class_description'];
+      $class_benefits=$_GET['class_benefits'];
+      $class_cover=$_GET['class_cover'];
+      $class_trainer=$_GET['class_trainer'];
+      $class_status=$_GET['class_status'];
+      $delete_at=$_GET['delete_at'];
+      $update_at=$_GET['update_at'];
+      $created_at=$_GET['created_at'];
+  }
+  ?>
+</body>
+</html>
